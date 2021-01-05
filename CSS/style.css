@@ -381,6 +381,16 @@ body {
 @media only screen and (max-width:500px){
 
     .presentation-img img{
-        padding-top: 65%;
+        display: none;
     }
+
+    .presentation-bloc {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .map {
+        height: 50vh;
+    }
+
 }
