@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+.nav {
+    width: 100%;
+}
+
+.nav-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1% 0;
+}
+
+.main-left, .main-right {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-left span {
+    font-weight: 400;
+    font-size: 1.125;
+}
+
+.main-left p {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    line-height: 1.177em;
+    font-size: 1.125;
+    
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.main-right span {
+    font-weight: 400;
+    font-size: 1.125;
+}
+
+.main-right p {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    line-height: 1.177em;
+    font-size: 1.125;
+    
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.green-bloc {
+    background-color: #339a65;
+}
+
+.green-bloc p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 0.889em;
+    line-height: 0.1em;
+    text-align: center;
+    padding: 7px 16px;
+    border-radius: 18px;
+    display: block;
+    width: auto;
+    margin: 20px 10px 15px;
+    text-transform: none;
+}
+
+#hamburger-nav {
+    font-size: 2em;
+    z-index: 100;
+    display: none;
+}
+
+/* Landing page */
+
+.landing-page-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.landing-page-content img {
+    width: 100%;
+}
+
+.landing-page-content h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #0072b6;
+    font-size: 3.33em;
+
+    position: absolute;
+    top: 0;
+
+    margin: 10% 5%;
+    padding: 12px 18px;
+
+    background-color: rgb(255,255,255,0.69 );
+}
+
+/* Presentation */
+
+.presentation {
+    width: 100%;
+    height: auto;
+}
+
+.presentation-bloc {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+
+    padding: 5%;
+}
+
+.presentation-content {
+    padding: 0 3% 3%;
+}
+
+.presentation-content h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #0072b6;
+    font-size: 1.5em;
+    
+    border-bottom: 2px solid #dadada;
+    padding-bottom: 15px;
+}
+
+.presentation-content p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.667em;
+    color: #131313;
+}
+
+.presentation-img img {
+    width: 100%;
+}
+
+/* Map */
+
+.presentation-content .carte {
+    margin-top: 15%;
+}
+
+.map {
+    height: 50vh;
+}
+
+#mapid { 
+    height: 100%;
+    width: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+    text-align: center;
+}
+
+.leaflet-popup-content {
+    font-weight: 350;
+}
+
+.leaflet-popup-content p {
+    opacity: 0.9;
+}
+
+/* Météo */
+
+.meteo {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    background-image: linear-gradient(to bottom, rgb(3, 119, 190, 0.3), rgb(3, 119, 190, 0.6));
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #DF8E00;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  header input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    color: #FFF;
+    font-size: 16px;
+  }
+  
+  .current .temp {
+    color: #FFF;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .current .temp span {
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .current .hi-low {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+  }
+
+/* Responsive */
+
+@media only screen and (max-width:1024px){
+
+    .main-right {
+        display: none;
+    }
+    .main-left {
+        display: none;
+    }
+
+    .nav-menu {
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        padding: 0 3%;
+    }
+
+
+    .nav-logo img {
+       width: 7em;
+    }
+
+    #hamburger-nav {
+        font-size: 2em;
+        display: block;
+        padding: 0 3%;
+    }
+
+    .landing-page-content h1 {
+        font-size: 2em;
+    }
+
+    .presentation-content h2 {
+        font-size: 1.2em;
+    }
+
+    .presentation-content p {
+        font-size: 1em;
+    }
+
+    .map {
+        height: 35vh;
+    }
+    
+    .current .temp {   
+        font-size: 3em;
+        text-shadow: 3px 5px rgba(0, 0, 0, 0.6);
+      }
+}
+
+@media only screen and (max-width:750px){
+
+    .nav-logo img {
+       width: 5em;
+    }
+
+    .presentation-content h2 {
+        font-size: 1em;
+    }
+
+    .presentation-content p {
+        font-size: 0.8em;
+    }
+
+    .map {
+        height: 35vh;
+    }
+    
+
+}
+
+@media only screen and (max-width:600px){
+
+    .nav-logo img {
+       width: 5em;
+    }
+
+    .landing-page-content h1 {
+        font-size: 1em;
+    }
+
+    .presentation-content h2 {
+        font-size: 0.8em;
+    }
+
+    .presentation-content p {
+        font-size: 0.7em;
+    }
+
+}
+
+
+@media only screen and (max-width:500px){
+
+    .presentation-content {
+       
+    }
+
+}

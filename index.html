@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Points d'intérêts | Ville de Narbonne</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <section class="nav">
+        <div class="nav-menu">
+            <i class="fas fa-bars" id="hamburger-nav"></i>
+            <div class="main-left">
+                <p><span>Au</span><br>Quotidien</p>
+                <p><span>Démarches</span><br>& Téléservices</p>
+                <p><span>Sorties</span><br>& Découvertes</p>
+            </div>
+            <div class="nav-logo">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <div class="main-right">
+                <p><span>La</span><br>Municipalité</p>
+                <p><span>Participation</span><br>Citoyenne</p>
+                <div class="green-bloc">
+                    <p>Allo Narbonne</p>
+                    <p>0800 15 13 11</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Landing page -->
+    <section class="landing-page-container">
+        <div class="landing-page-content">
+            <img src="Images/narbonne.jpg" class="narbonne" alt="Photo de narbonne">
+            <h1>Les points d'intérêts</h1>
+        </div>
+    </section>
+    <!-- Contenu -->
+    <section class="presentation">
+        <div class="presentation-bloc">
+            <div class="presentation-content">
+                <h2>Les principaux points d'intérêts de Narbonne</h2>
+                <p>Les différents points choisis représentent les lieux dans lesquels j'ai passé une énorme partie de mon temps ces dernières années. Il s'agit d'endroits chargés en émotion. J'y ai ressenti de la joie, de la colère, de la tristesse et bien d'autres encore.
+                </p>
+                <p>Évidemment, cela ne sera pas forcément pareil pour tout le monde.</p>
+                <!-- Map -->
+                <h2 class="carte">Carte</h2>
+                <div class="map">
+                    <div id="mapid"></div>
+                </div>
+            </div>
+            <div class="presentation-img">
+                <img src="Images/moi.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Météo -->
+    <div class="meteo">
+        <header>
+          <input type="text" autocomplete="off" class="search-box" placeholder="Recherchez une ville..." />
+        </header>
+        <main>
+          <section class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+          </section>
+          <div class="current">
+            <div class="temp"><span></span></div>
+            <div class="weather"></div>
+            <div class="hi-low"></div>
+          </div>
+        </main>
+      </div>
+    
+    
+    
+    <script src="JS/script.js"></script>
+</body>
+</html>
