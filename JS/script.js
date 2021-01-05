@@ -1,3 +1,7 @@
+// Agrandissement photo
+
+var image = document.getElementById('image')
+
 // Météo
 //  Stockage API + code
 const api = {
@@ -97,19 +101,19 @@ const api = {
   
   // Affichage des marqueurs
   L.marker([43.18484,2.99916],{icon: beer}).addTo(map)
-  .bindPopup('<h1>Le Botafogo</h1><p>Restaurant / bar ambiance de Narbonne</p> <img src="Images/bota.jpg" alt="" width="100%">')
+  .bindPopup('<h1>Le Botafogo</h1> <img src="Images/bota.jpg"><p>Restaurant / bar ambiance de Narbonne</p>')
   
   L.marker([43.18162,3.02854],{icon: hamburger}).addTo(map)
-  .bindPopup('<h1>McDonalds</h1><p>Fast-food</p> <img src="Images/mcdo.jpeg" alt="" width="300px">')
+  .bindPopup('<h1>McDonalds</h1><p>Fast-food</p> <img src="Images/mcdo.jpeg">')
   
   L.marker([43.16433,2.98744],{icon: movie}).addTo(map)
-  .bindPopup('<h1>Cinéma CGR Narbonne</h1> <br> <img src="Images/cgr.jpg" alt="" width="300px">')
+  .bindPopup('<h1>Cinéma CGR Narbonne</h1> <br> <img src="Images/cgr.jpg">')
   
   L.marker([43.1607912, 2.9869241],{icon: beer}).addTo(map)
-  .bindPopup('<h1>Le Repaire</h1><p>Bar ambiance</p> <img src="Images/repaire.jpg" alt="" width="300px">')
+  .bindPopup('<h1>Le Repaire</h1><p>Bar ambiance</p> <img src="Images/repaire.jpg">')
   
   L.marker([43.1896224, 3.0180646],{icon: hamburger}).addTo(map)
-  .bindPopup('<h1>Enjoy tacos</h1><p>Snack</p> <img src="Images/tacos.jpeg" alt="" width="100%">');
+  .bindPopup('<h1>Enjoy tacos</h1><p>Snack</p> <img src="Images/tacos.jpeg">');
   
   
   

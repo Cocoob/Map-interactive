@@ -155,6 +155,11 @@ body {
     width: 100%;
 }
 
+.presentation-img img:hover {
+    opacity: 0.8;
+    cursor: zoom-in;
+}
+
 /* Map */
 
 .presentation-content .carte {
@@ -162,7 +167,13 @@ body {
 }
 
 .map {
-    height: 50vh;
+    height: 80vh; 
+    
+}
+
+.map:hover {
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.2);
+    transition-duration: 0s;
 }
 
 #mapid { 
@@ -172,6 +183,8 @@ body {
 
 .leaflet-popup-content-wrapper {
     text-align: center;
+    max-width: 300px;
+    background-image: linear-gradient(to bottom, rgb(255,255,255), rgb(3, 119, 190, 0.25)) ;
 }
 
 .leaflet-popup-content {
@@ -180,6 +193,10 @@ body {
 
 .leaflet-popup-content p {
     opacity: 0.9;
+}
+
+.leaflet-popup-content img {
+    width: 200px;
 }
 
 /* Météo */
