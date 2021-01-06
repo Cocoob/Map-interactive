@@ -361,11 +361,18 @@ body {
         font-size: 0.8em;
     }
 
-    .map {
-        height: 35vh;
+    .presentation-img img{
+        display: none;
     }
-    
 
+    .presentation-bloc {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .map {
+        height: 50vh;
+    }
 }
 
 @media only screen and (max-width:600px){
@@ -390,19 +397,6 @@ body {
 
 
 @media only screen and (max-width:500px){
-
-    .presentation-img img{
-        display: none;
-    }
-
-    .presentation-bloc {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .map {
-        height: 50vh;
-    }
 
     #hamburger-nav {
         font-size: 1.5em;
