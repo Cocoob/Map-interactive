@@ -27,6 +27,7 @@ const api = {
     }
   }
   
+
   function getResults (query) {
     fetch(`${api.base}weather?q=${query}&lang=fr&units=metric&APPID=${api.key}`)
     .then(weather => {
@@ -34,7 +35,7 @@ const api = {
     }).then(displayResults);
   }
   
-  
+
   function displayResults (weather) {
     let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
