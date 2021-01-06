@@ -98,19 +98,19 @@ const api = {
   
   // Affichage des marqueurs
   L.marker([43.18484,2.99916],{icon: beer}).addTo(map)
-  .bindPopup('<h1>Le Botafogo</h1> <img src="Images/bota.jpg"><p>Restaurant / bar ambiance de Narbonne</p>')
+  .bindPopup('<h1>Le Botafogo</h1> <img src="Images/bota.jpg"> <p>Restaurant / bar ambiance de Narbonne</p>')
   
   L.marker([43.18162,3.02854],{icon: hamburger}).addTo(map)
-  .bindPopup('<h1>McDonalds</h1><p>Fast-food</p> <img src="Images/mcdo.jpeg">')
+  .bindPopup('<h1>McDonalds</h1> <img src="Images/mcdo.jpeg"> <p>Fast-food</p>')
   
   L.marker([43.16433,2.98744],{icon: movie}).addTo(map)
-  .bindPopup('<h1>Cinéma CGR Narbonne</h1> <br> <img src="Images/cgr.jpg">')
+  .bindPopup('<h1>Cinéma CGR Narbonne</h1> <img src="Images/cgr.jpg"> <p>Cinéma de Narbonne, composé de 9 salles.</p> ')
   
   L.marker([43.1607912, 2.9869241],{icon: beer}).addTo(map)
-  .bindPopup('<h1>Le Repaire</h1><p>Bar ambiance</p> <img src="Images/repaire.jpg">')
+  .bindPopup('<h1>Le Repaire</h1> <img src="Images/repaire.jpg"> <p>Bar ambiance</p>')
   
   L.marker([43.1896224, 3.0180646],{icon: hamburger}).addTo(map)
-  .bindPopup('<h1>Enjoy tacos</h1><p>Snack</p> <img src="Images/tacos.jpeg">');
+  .bindPopup('<h1>Enjoy tacos</h1> <img src="Images/tacos.jpeg"> <p>Snack</p>');
   
   
   
