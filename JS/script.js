@@ -48,7 +48,7 @@ const api = {
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
     
     let weather_el = document.querySelector('.current .weather');
-    weather_el.innerHTML = "<img src=http://openweathermap.org/img/w/"+weather.weather[0].icon+".png>";
+    weather_el.innerHTML = "<img src=http://openweathermap.org/img/wn/"+weather.weather[0].icon+"@2x.png>";
     
     let hilow = document.querySelector('.hi-low');
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
