@@ -1,6 +1,3 @@
-// Agrandissement photo
-
-var image = document.getElementById('image')
 
 // Météo
 //  Stockage API + code
@@ -50,7 +47,7 @@ const api = {
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
     
     let weather_el = document.querySelector('.current .weather');
-    weather_el.innerText = weather.weather[0].description;
+    weather_el.innerHTML = "<img src=http://openweathermap.org/img/w/"+weather.weather[0].icon+".png>";
     
     let hilow = document.querySelector('.hi-low');
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;

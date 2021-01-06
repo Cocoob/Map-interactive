@@ -276,6 +276,10 @@ body {
     margin-bottom: 15px;
     text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
   }
+
+  .current .weather img {
+      width: 100%;
+  }
   
   .current .hi-low {
     color: #FFF;
@@ -392,5 +396,15 @@ body {
     .map {
         height: 50vh;
     }
+
+    #hamburger-nav {
+        font-size: 1.5em;
+        display: block;
+        padding: 0 3%;
+    }
+
+    .nav-logo img {
+        width: 5em;
+     }
 
 }
