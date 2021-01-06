@@ -101,16 +101,16 @@ const api = {
   .bindPopup('<h1>Le Botafogo</h1> <img src="Images/bota.jpg"> <p>Restaurant / bar ambiance de Narbonne</p>')
   
   L.marker([43.18162,3.02854],{icon: hamburger}).addTo(map)
-  .bindPopup('<h1>McDonalds</h1> <img src="Images/mcdo.jpeg"> <p>Fast-food</p>')
+  .bindPopup('<h1>McDonalds</h1> <img src="Images/mcdo.jpeg"> <p>Fast-food</p> <p>Une soirée un peu trop arrosée ? Rien de tel pour se remettre d"aplomb le lendemain.</p>')
   
   L.marker([43.16433,2.98744],{icon: movie}).addTo(map)
   .bindPopup('<h1>Cinéma CGR Narbonne</h1> <img src="Images/cgr.jpg"> <p>Cinéma de Narbonne, composé de 9 salles.</p> ')
   
   L.marker([43.1607912, 2.9869241],{icon: beer}).addTo(map)
-  .bindPopup('<h1>Le Repaire</h1> <img src="Images/repaire.jpg"> <p>Bar ambiance</p>')
+  .bindPopup('<h1>Le Repaire</h1> <img src="Images/repaire.jpg"> <p>Bar ambiance</p> <p>Le rapport entre la quantité de Ricard dans le verre et son prix est vraiment incroyable</p>')
   
   L.marker([43.1896224, 3.0180646],{icon: hamburger}).addTo(map)
-  .bindPopup('<h1>Enjoy tacos</h1> <img src="Images/tacos.jpeg"> <p>Snack</p>');
+  .bindPopup('<h1>Enjoy tacos</h1> <img src="Images/tacos.jpeg"> <p>Snack</p> <p>Vous avez une faim de loup ? Je vous met au défi de finir le Gigatacos de ce merveilleux snack</p>');
   
   
   
