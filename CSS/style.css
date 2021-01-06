@@ -340,10 +340,6 @@ body {
     .presentation-content p {
         font-size: 1em;
     }
-
-    .map {
-        height: 35vh;
-    }
     
     .current .temp {   
         font-size: 3em;
@@ -416,6 +412,17 @@ body {
 
     .nav-logo img {
         width: 5em;
-     }
+    }
 
+    .leaflet-popup-content-wrapper {
+        width: 150px;
+    }
+
+    .leaflet-popup-content h1 {
+        font-size: 1em;
+    }
+    
+    .leaflet-popup-content p {
+        margin: 0;
+    }
 }
