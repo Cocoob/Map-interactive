@@ -1,3 +1,16 @@
+// Agrandissement photo
+var div = document.querySelectorAll(".presentation-img");
+var image = document.getElementById('img');
+
+image.onclick = getResize;
+
+function getResize(){
+    for ( i = 0 ; i < div.length ; i++ ) {
+        div[i].classList.toggle('active')
+    }
+}
+
+
 
 // Météo
 //  Stockage API + code
