@@ -1,6 +1,10 @@
 // Agrandissement photo
 var div = document.querySelectorAll(".presentation-img");
 var image = document.getElementById('img');
+var nav = document.querySelectorAll(".nav");
+var landindPage = document.querySelectorAll(".landing-page-container");
+var presentation = document.querySelectorAll(".presentation");
+var meteo = document.querySelectorAll(".meteo");
 
 image.onclick = getResize;
 
@@ -125,8 +129,4 @@ const api = {
   
   L.marker([43.1896224, 3.0180646],{icon: hamburger}).addTo(map)
   .bindPopup('<h1>Enjoy tacos</h1> <img src="Images/tacos.jpeg"> <p>Snack</p> <p>Vous avez une faim de loup ? Je vous met au défi de finir le Gigatacos de ce merveilleux snack</p>');
-  
-  
-  
-  
   

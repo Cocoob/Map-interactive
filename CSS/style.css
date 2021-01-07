@@ -158,7 +158,7 @@ body {
 }
 
 .presentation-img img:hover {
-    opacity: 0.8;
+    filter: blur(0.8px);
     cursor: zoom-in;
 }
 
@@ -167,6 +167,8 @@ body {
     cursor: zoom-out;
     transition-duration: 0.5s;
     z-index: 100;
+
+    width: 100%;
 }
 
 /* Map */
@@ -226,10 +228,24 @@ body {
 .meteo {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: auto;
     background-image: linear-gradient(to bottom, rgb(3, 119, 190, 0.3), rgb(3, 119, 190, 0.6));
+    height: 75vh;
   }
   
+  .box {
+      width: 50%;
+      height: 90%;
+  }
+
+  .meteo:hover .box {
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255);
+    border-radius: 20px;
+    transition-duration: 0.2s;
+  }
+
   header {
     display: flex;
     justify-content: center;
@@ -306,6 +322,111 @@ body {
     font-weight: 500;
     text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
   }
+
+/* Footer */
+
+.topfooter {
+    display: flex;
+    align-items: center;
+    background: #282828;
+}
+
+.titre {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    line-height: 1.429em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: #2f2f2f;
+    padding-right: 10px;
+    padding-left: 97px;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    display: flex;
+}
+
+.titre > div {
+    color: white;
+}
+
+.titre > div span {
+    font-weight: 700;
+}
+
+#share {
+    color: white;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footermenu {
+    background: #282828;
+    width: 100%;
+    height: 100%;
+}
+
+.footermenu ul {
+    display: flex;
+    padding: 0;
+}
+
+.footermenu ul li {
+    list-style: none;
+    font-size: 1em;
+    line-height: 1.25em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #c0c0c0;
+    text-transform: uppercase;
+    margin: 2%;
+    width: 15%;
+}
+
+.footermenu ul li a {
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+.footermenu ul li i {
+    margin: 3%;
+}
+
+.mapfooter {
+    background: #141414;
+}
+
+.mapfooter img {
+    width: 100%;
+}
+
+.lienfooter {
+    width: 100%;
+    background: #141414;
+}
+
+.lienfooter ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+.lienfooter ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.lienfooter ul li {
+    margin: 2% 1%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8em;
+}
 
 /* Responsive */
 
