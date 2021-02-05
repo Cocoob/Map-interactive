@@ -17,8 +17,13 @@
 
     <!-- Navigation -->
     <section class="nav">
+        <div class="navbar">
+        <input type="checkbox" id="menuCheck">
+        <label for="menuCheck" class="menu-icon">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
         <div class="nav-menu">
-            <i class="fas fa-bars" id="hamburger-nav"></i>
             <div class="main-left">
                 <p><span>Au</span><br>Quotidien</p>
                 <p><span>Démarches</span><br>& Téléservices</p>
@@ -35,6 +40,7 @@
                     <p>0800 15 13 11</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Landing page -->
@@ -66,7 +72,7 @@
     <!-- Météo -->
     <div class="meteo">
         <div class="box">
-            <header>
+            <header class="header-meteo">
                 <input type="text" autocomplete="off" class="search-box" placeholder="Recherchez une ville..." />
             </header>
             <div class="information">
